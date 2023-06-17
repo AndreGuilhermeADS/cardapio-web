@@ -95,7 +95,7 @@ header h1 {
 /* main */
 
 #menu {
-    height:600px;
+    height:auto;
     background-color: #fffaf3;
     
 }
@@ -119,8 +119,8 @@ header h1 {
 
 }
 
-#menu .filter-btn.active .filter-btn:hover {
-    background-color: rgba(124, 60, 18, 0.618);
+#menu .filter-btn.active, #menu .filter-btn:hover {
+    background-color:#faa238;;
     color: white;
     border: none;
     font-weight: bolder;
@@ -135,6 +135,8 @@ header h1 {
     margin-top: 0px;
 }
 
+
+
 /* plates */
 
 #menu .menu-box {
@@ -146,7 +148,7 @@ header h1 {
     font-size: 16px;
     font-weight:900;
     text-transform: uppercase;
-    margin-top: 40px;
+    
 }
 
 #menu .pointer-price {
@@ -160,6 +162,7 @@ header h1 {
     font-size: 14px;
     text-align:start;
     max-width: 326px;
+    margin-bottom: 30px;
 }
 
 #menu .price{
@@ -170,6 +173,11 @@ header h1 {
 #menu .cifrao-price {
     font-size: 10px;
     color: #000;
+}
+
+#menu .menu-margin {
+    margin-left: 10px;
+
 }
 
 
