@@ -12,12 +12,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <!-- bootstrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- css -->
     <link rel="stylesheet" href="estilo/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
 
     <!-- js - cnd - bootstrap -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -33,13 +38,14 @@
 
 </head>
 <body id="background-body">
-    <header>
-        <div class="container-fluid" id="nav-container">
-            <nav class="navbar navbar-expand-md fixed-top header-transparent">
+    <header >
+        <div class="container-fluid " id="nav-container">
+            <nav class="navbar navbar-expand-md fixed-top">
                 <div class="navbar-brand">
-                    <img  id="logo" src="img/transferir (1).png" alt="Restaurante">
+                    <img  id="logo" src="img/logo.png" alt="Restaurante">
+                    <h1><strong>B</strong>ourbon <strong>B</strong>ar</h1>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-be-target="#navbar-links" aria-controls="navbar-links" 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-be-target="#navbar-links" aria-controls="navbar-links"
                 aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,13 +70,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item  active" id="img-item-1">
-                        <img src="img/cerveja-ok.jpg" class="d-block w-100 img-1" alt="Foto Cerveja">
+                        <img src="img/cerveja.jpg" class="d-block w-100 img-1" alt="Foto Cerveja">
                     </div>
                     <div class="carousel-item img-item-2">
                         <img src="img/comida.png" class="d-block w-100" alt="Prato regional">
                     </div>
                     <div class="carousel-item img-item-3">
-                        <img src="img/prato.png" class="d-block w-100" alt="Prato regional 2">
+                        <img src="img/bebidas.jpg" class="d-block w-100" alt="Prato regional 2">
                     </div>
                 </div>
                 <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
@@ -83,30 +89,29 @@
                 </a>
             </div>
         </div>
-    
-        <div class="container">
-            <div class="row">
-            <div class="col-12">
-                <h1>Menu</h1>
-            </div>
-        </div>
-        </div>
     </header> 
     <main>  
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Menu</h2>
+                </div>
+        </div>
+        </div>
         <div id="menu">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 justify-content-center g-3" id="filter-btn-box">
                         <div class=" filter mb-5">
-                            <button class="btn filter-btn active" id="appetizer-btn">Entradas</button>
-                            <button class="btn filter-btn " id="principal-btn">Principais</button>
-                            <button class="btn filter-btn " id="snacks-btn">Petiscos</button>
-                            <button class="btn filter-btn " id="desserts-btn">Sobremesas</button>
-                            <button class="btn filter-btn " id="drinks-btn">Bebidas</button>
+                            <button class="main-btn filter-btn active" id="appetizer-btn">Entradas</button>
+                            <button class="main-btn filter-btn " id="principal-btn">Principais</button>
+                            <button class="main-btn filter-btn " id="snacks-btn">Petiscos</button>
+                            <button class="main-btn filter-btn " id="desserts-btn">Sobremesas</button>
+                            <button class="main-btn filter-btn " id="drinks-btn">Bebidas</button>
                         </div>
                     </div>
                     <div class="col-6 menu-box appetizer">
-                        <h2 class="title-plate menu-margin">caldinho de chambaril<span class="pointer-price">...............</span><strong class="price"><span class="cifrao-price">R$ </span>11,90</strong></h2>
+                        <h2 class="title-plate menu-margin">caldinho de chambaril<span class="pointer-price">............</span><strong class="price"><span class="cifrao-price">R$ </span>11,90</strong></h2>
                         <p class="descrition-plate menu-margin">Caldinho de ossobuco com pedacinhos de chambaril, servido com couve crispy e pimenta do reino.</p>
                     </div>
                     <div class="col-6 menu-box appetizer">
@@ -114,24 +119,24 @@
                         <p class="descrition-plate">Jerimum caboclo com charque desfiada, toque de gengibre, finalizado com charque desfiada e pimentabiquinho.</p>
                     </div>
                     <div class="col-6 menu-box appetizer">
-                        <h2 class="title-plate menu-margin">caldinho de feijuca<span class="pointer-price">.....................</span><strong class="price"><span class="cifrao-price">R$ </span>11,90</strong></h2>
+                        <h2 class="title-plate menu-margin">caldinho de feijuca<span class="pointer-price">...................</span><strong class="price"><span class="cifrao-price">R$ </span>11,90</strong></h2>
                         <p class="descrition-plate menu-margin">Caldinho de feijão preto com pertences suínos e charcutarias, servido com ovo de codorna, azeitona, torresminho de charque finalizado com farofinha da casa e pimenta biquinho</p>
                     </div>
                     <div class="col-6 menu-box appetizer">
-                        <h2 class="title-plate">trio de pão de alho<span class="pointer-price">.................</span><strong class="price"><span class="cifrao-price">R$ </span>19,90</strong></h2>
+                        <h2 class="title-plate">trio de pão de alho<span class="pointer-price">....................</span><strong class="price"><span class="cifrao-price">R$ </span>19,90</strong></h2>
                         <p class="descrition-plate">Três pãezinhos com creme de alho, recheio de mussarela, queijo do reino e salaminho finalizados com maçarico.</p>
                     </div>
                     <!-- principais -->
                     <div class="col-6 menu-box principal">
-                        <h2 class="title-plate menu-margin">parmê suíno<span class="pointer-price">...................................</span><strong class="price"><span class="cifrao-price">R$ </span>36,90</strong></h2>
+                        <h2 class="title-plate menu-margin">parmê suíno<span class="pointer-price">..................................</span><strong class="price"><span class="cifrao-price">R$ </span>36,90</strong></h2>
                         <p class="descrition-plate  menu-margin">Corte suíno em crosta de panko e spaghetti ao pomodoro e fritas.</p>
                     </div>
                     <div class="col-6 menu-box principal">
-                        <h2 class="title-plate">camarão aos quatro queijos com fettuccini<span class="pointer-price">..................................</span><strong class="price"><span class="cifrao-price">R$ </span>44,90</strong></h2>
+                        <h2 class="title-plate">camarão aos quatro queijos com fettuccini<span class="pointer-price">......................................</span><strong class="price"><span class="cifrao-price">R$ </span>44,90</strong></h2>
                         <p class="descrition-plate">Camarões ao bachamel com gorgonzola, parmesão, cream cheese e mussarela no ferruccine.</p>
                     </div>
                     <div class="col-6 menu-box principal">
-                        <h2 class="title-plate  menu-margin" >risoto de jerimum vegano<span class="pointer-price">........</span><strong class="price"><span class="cifrao-price">R$ </span>36,90</strong></h2>
+                        <h2 class="title-plate  menu-margin" >risoto de jerimum vegano<span class="pointer-price">...</span><strong class="price"><span class="cifrao-price">R$ </span>36,90</strong></h2>
                         <p class="descrition-plate menu-margin">Risoto de jerimum preparado com arroz arbório, carne de jaca, azeite de oliva e mangará.</p>
                     </div>
                     <div class="col-6 menu-box principal">
@@ -140,15 +145,15 @@
                     </div>
                     <!-- petiscos -->
                     <div class="col-6 menu-box snacks">
-                        <h2 class="title-plate  menu-margin" >ensopadinho de sururu<span class="pointer-price">..............</span><strong class="price"><span class="cifrao-price">R$ </span>25,90</strong></h2>
+                        <h2 class="title-plate  menu-margin" >ensopadinho de sururu<span class="pointer-price">.........</span><strong class="price"><span class="cifrao-price">R$ </span>25,90</strong></h2>
                         <p class="descrition-plate menu-margin">Marisco cozido em leite de côco.</p>
                     </div>
                     <div class="col-6 menu-box snacks">
-                        <h2 class="title-plate">panelinha de frango gratinada<span class="pointer-price">...................................</span><strong class="price"><span class="cifrao-price">R$ </span>29,90</strong></h2>
+                        <h2 class="title-plate">panelinha de frango gratinada<span class="pointer-price">......................................</span><strong class="price"><span class="cifrao-price">R$ </span>29,90</strong></h2>
                         <p class="descrition-plate">Cubos de frango temperados gratinado com queijo manteiga de Cachoeirinha servido com torradas.</p>
                     </div>
                     <div class="col-6 menu-box snacks">
-                        <h2 class="title-plate  menu-margin" >tarta de salmão<span class="pointer-price">...........................</span><strong class="price"><span class="cifrao-price">R$ </span>39,90</strong></h2>
+                        <h2 class="title-plate  menu-margin" >tarta de salmão<span class="pointer-price">.........................</span><strong class="price"><span class="cifrao-price">R$ </span>39,90</strong></h2>
                         <p class="descrition-plate menu-margin">Salmão cortado na ponta da faca com calda de maracujá e torradas da casa.</p>
                     </div>
                     <div class="col-6 menu-box snacks">
@@ -157,7 +162,7 @@
                     </div>
                     <!-- sobremesas -->
                     <div class="col-6 menu-box desserts">
-                        <h2 class="title-plate  menu-margin" >cartola especial<span class="pointer-price">..........................</span><strong class="price"><span class="cifrao-price">R$ </span>19,90</strong></h2>
+                        <h2 class="title-plate  menu-margin" >cartola especial<span class="pointer-price">.........................</span><strong class="price"><span class="cifrao-price">R$ </span>19,90</strong></h2>
                         <p class="descrition-plate menu-margin">Banana madura , empanada em farinha crocante com adição de canela e açucar e fatia generosa de queijo de manteiga maçaricada por cima.</p>
                     </div>
                     <div class="col-6 menu-box desserts">
@@ -165,20 +170,20 @@
                         <p class="descrition-plate">Palitinhos de tapioca com açucar e canela (acompanha doce de leite, sorvete de coco e coco queimado).</p>
                     </div>
                     <div class="col-6 menu-box desserts">
-                        <h2 class="title-plate  menu-margin" >mousse de chocolate<span class="pointer-price">.................</span><strong class="price"><span class="cifrao-price">R$ </span>21,90</strong></h2>
+                        <h2 class="title-plate  menu-margin" >mousse de chocolate<span class="pointer-price">................</span><strong class="price"><span class="cifrao-price">R$ </span>21,90</strong></h2>
                         <p class="descrition-plate menu-margin">A (melhor do mundo) clássica mousse de chocolate.</p>
                     </div>
                     <div class="col-6 menu-box desserts">
-                        <h2 class="title-plate">petit gateau nordestino<span class="pointer-price">........</span><strong class="price"><span class="cifrao-price">R$ </span>22,90</strong></h2>
+                        <h2 class="title-plate">petit gateau nordestino<span class="pointer-price">.......</span><strong class="price"><span class="cifrao-price">R$ </span>22,90</strong></h2>
                         <p class="descrition-plate">bolo de rolo com recheio de creme de queijo, sorvete de creme e calda de goiabada.</p>
                     </div>
                     <!-- bebidas -->
                     <div class="col-6 menu-box drinks">
-                        <h2 class="title-plate  menu-margin" >downtown rock pilsen<span class="pointer-price">.............</span><strong class="price"><span class="cifrao-price">R$ </span>10,00</strong></h2>
+                        <h2 class="title-plate  menu-margin" >downtown rock pilsen<span class="pointer-price">...........</span><strong class="price"><span class="cifrao-price">R$ </span>10,00</strong></h2>
                         <p class="descrition-plate menu-margin">275ml.</p>
                     </div>
                     <div class="col-6 menu-box drinks">
-                        <h2 class="title-plate">downtown hard ipa<span class="pointer-price">.................</span><strong class="price"><span class="cifrao-price">R$ </span>13,00</strong></h2>
+                        <h2 class="title-plate">downtown hard ipa<span class="pointer-price">..................</span><strong class="price"><span class="cifrao-price">R$ </span>13,00</strong></h2>
                         <p class="descrition-plate ">275ml</p>
                     </div>
                     <div class="col-6 menu-box drinks">
@@ -186,7 +191,7 @@
                         <p class="descrition-plate menu-margin">600ml</p>
                     </div>
                     <div class="col-6 menu-box drinks">
-                        <h2 class="title-plate">eisenbahn<span class="pointer-price">.....................................</span><strong class="price"><span class="cifrao-price">R$ </span>17,00</strong></h2>
+                        <h2 class="title-plate">eisenbahn<span class="pointer-price">........................................</span><strong class="price"><span class="cifrao-price">R$ </span>17,00</strong></h2>
                         <p class="descrition-plate">600ml</p>
                     </div>
 
@@ -196,8 +201,17 @@
     </main>  
     <footer>
         <div class="container-fluid " id="footer-area">
-            <p class="sticky-bottom">&copy;Desenvolvido por O&A - Soluções</p>
+            <div id="social-media">
+                <h3>Bourbon Bar</h3>
+                <p>Um jardim feito para reunir os amigos!</p>
+                <a href="https://www.instagram.com/downtownbeergarden_/" target="_blank" rel="external"><img class="social-img" src="img/logo-instagram.jpg" alt="Logo Instagram "></a>
+                <a href="https://www.facebook.com/Downtownpubrecifepe/?locale=pt_BR" target="_blank" rel="external"><img class="social-img" src="img/logo-facebook.jpg" alt="Logo facebook"></a>
+            </div>
+            <p>&copy; Copyright <strong>BourbonBar</strong>. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <span>O&A</span> - Soluções</p>
         </div>
     </footer>
+    <!-- scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>

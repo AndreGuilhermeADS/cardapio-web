@@ -19,7 +19,6 @@
 
 body{
     font-family: 'Playfair Display', serif; 
-   
 }
 
 
@@ -27,28 +26,43 @@ body{
 /* header */
 
 
-#nav-container .header-transparent {
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
+header nav {
+    margin-top: 10PX;
     background-color: rgba(26, 24, 22, 0.85);
-  
+    border-radius: 30px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 
 
 #logo {
     width: 40px;
-    background-color:#faa238;
+    background-color:#faa338ec;
     border-radius: 50px;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.643);
-    margin-left: 20px;
+    box-shadow: 1px 1px 5px #faa338;
+    margin-left: 40px;
     padding-top: -5px 0px -5px 0px;
+    position: relative;
 
+}
+
+header h1{
+    font-size: 24px;
+    margin-left: 25px;
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    color: #faa338 !important;
+    display: inline;
+    text-shadow: 1px 1px 5px #faa338b3;
+    font-family: 'Pacifico', cursive;
+}
+
+header strong {
+    font-size: 30px;
 }
 
 .navbar-brand {
@@ -57,7 +71,7 @@ body{
 
 
 #navbar-links{
-    margin-right: 0px;
+    margin-right: 40px;
     letter-spacing: 1px;
 }
 
@@ -70,11 +84,14 @@ body{
     color: var(--cor04);
 }
  
-header h1 {
-    margin-top: 6px;
+main h2 {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-transform:capitalize;
     text-align: center;
     color: var(--cor04);
-  
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
 }
 
 .container-fluid {
@@ -97,11 +114,13 @@ header h1 {
 #menu {
     height:auto;
     background-color: #fffaf3;
+    margin-bottom: 40px;
     
 }
 
 #menu .row {
     height: 100%;
+    
 }
 
 
@@ -112,10 +131,11 @@ header h1 {
     border: 1px solid #faa238;
     box-shadow: 1px 2px 4px #571e09a1;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px;
     transition: .5s;
     margin: 0 10px;
+    font-weight: bold;
 
 }
 
@@ -141,14 +161,17 @@ header h1 {
 
 #menu .menu-box {
     justify-content: space-between;
+    
 }
 
 #menu .title-plate {
     color: #e1881b ;
-    font-size: 16px;
+    font-size: 15px;
     font-weight:900;
     text-transform: uppercase;
+    text-align:start;
     
+  
 }
 
 #menu .pointer-price {
@@ -163,6 +186,7 @@ header h1 {
     text-align:start;
     max-width: 326px;
     margin-bottom: 30px;
+
 }
 
 #menu .price{
@@ -176,9 +200,9 @@ header h1 {
 }
 
 #menu .menu-margin {
-    margin-left: 10px;
-
+    margin-left: 15px;
 }
+
 
 
 /* Footer */
@@ -186,18 +210,52 @@ header h1 {
 #footer-area {
     margin-top: 0px;
     width: 100vw;
-    margin-bottom: 5px;
+    margin-bottom:0px;
     color: #faa238;
     text-align: center;
     padding:8px 0px -10px 0px;
-    background: rgba(26, 24, 22, 0.85);;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center bottom;
+    background: rgba(26, 24, 22, 0.85);
+    padding: 50px;
+    padding-bottom: 10px;
     
 }
 
-
-#footer-area p {
-    margin-bottom: 3px;
+footer h3{
+    margin-top: -25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
 }
+
+footer p {
+    font-size: 16px;
+    color: rgb(236, 232, 232);
+    
+}
+
+#social-media p {
+    letter-spacing: 2px;
+}
+
+footer strong {
+    color: rgb(195, 177, 177);
+    font-size: 20px;
+}
+
+footer span {
+   color: #faa238;
+}
+
+#social-media .social-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 15px 5px;
+
+}
+
+footer .sticky-bottom {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
