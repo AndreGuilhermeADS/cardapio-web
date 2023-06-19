@@ -84,23 +84,17 @@ header strong {
     color: var(--cor04);
 }
  
-main h2 {
-    margin-top: -10px;
-    margin-bottom: 15px;
-    text-transform:capitalize;
-    text-align: center;
-    color: var(--cor04);
-    font-family: 'Pacifico', cursive;
-    font-size: 50px;
-}
+
+
+/* carrosel*/
 
 .container-fluid {
     padding: 0;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item{
-    margin-top:-5%;
-    height: 95vh;
+    margin-top:-5px;
+    height: 80vh;
 }
 
 .carousel-indicators li{
@@ -110,6 +104,17 @@ main h2 {
 
 
 /* main */
+
+
+main h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform:capitalize;
+    text-align: center;
+    color: var(--cor04);
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
 
 #menu {
     height:auto;
@@ -135,7 +140,7 @@ main h2 {
     padding: 10px;
     transition: .5s;
     margin: 0 10px;
-    font-weight: bold;
+    font-weight:500;
 
 }
 
@@ -186,6 +191,7 @@ main h2 {
     text-align:start;
     max-width: 326px;
     margin-bottom: 30px;
+    margin-top: -25px;
 
 }
 
@@ -215,43 +221,49 @@ main h2 {
     text-align: center;
     padding:8px 0px -10px 0px;
     background: rgba(26, 24, 22, 0.85);
-    padding: 50px;
-    padding-bottom: 10px;
+    padding: 20px;
+    padding-bottom: 3px;
     
 }
 
 footer h3{
-    margin-top: -25px;
-    margin-bottom: 15px;
-    font-size: 30px;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    font-size: 25px;
     font-family: 'Pacifico', cursive;
+   
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 13px;
     color: rgb(236, 232, 232);
     
 }
 
+#social-media a {
+    display: inline;
+}
+
+#social-media i{
+    font-size: 25px;
+    margin: 0 20px;
+    padding: 0px 20px;
+    display: inline;
+}
+
 #social-media p {
     letter-spacing: 2px;
+    display: inline;
+  
 }
 
 footer strong {
     color: rgb(195, 177, 177);
-    font-size: 20px;
+    font-size: 13px;
 }
 
 footer span {
    color: #faa238;
-}
-
-#social-media .social-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    margin: 15px 5px;
-
 }
 
 footer .sticky-bottom {
@@ -259,3 +271,16 @@ footer .sticky-bottom {
     margin-bottom: 0;
 }
 
+footer i {
+    color: white;
+    display: inline;
+}
+
+footer .paragraph-copy {
+    margin-bottom: -1px;
+    margin-top: 5px;
+}
+
+footer .paragraph-descrition {
+    margin-bottom: -1px;
+}
